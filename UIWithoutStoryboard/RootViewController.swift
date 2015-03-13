@@ -28,7 +28,7 @@ class RootViewController: UIViewController {
 //        button.frame = CGRect(x: 110, y: 70, width: 100, height: 44)
 
         button.snp_makeConstraints { make in
-            make.center.equalTo(self.view).offset(CGPointMake(-5, 10))
+            make.center.equalTo(self.view).offset(CGPointMake(0, 0))
             return // this return is a fix for implicit returns in Swift and is only required for single line constraints
         }
 
