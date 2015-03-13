@@ -12,6 +12,8 @@
 		00C3282E1AAFE4C40062F6EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00C3282C1AAFE4C40062F6EA /* LaunchScreen.xib */; };
 		00C3283A1AAFE4C40062F6EA /* UIWithoutStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C328391AAFE4C40062F6EA /* UIWithoutStoryboardTests.swift */; };
 		00C328441AAFE7B20062F6EA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C328431AAFE7B20062F6EA /* RootViewController.swift */; };
+		00C9B7791AB2BDE200C6F924 /* Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C9B7761AB2BC6200C6F924 /* Snap.framework */; };
+		00C9B77A1AB2BDE200C6F924 /* Snap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00C9B7761AB2BC6200C6F924 /* Snap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +24,42 @@
 			remoteGlobalIDString = 00C3281D1AAFE4C40062F6EA;
 			remoteInfo = UIWithoutStoryboard;
 		};
+		00C9B7751AB2BC6200C6F924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C9B7701AB2BC6200C6F924 /* Snap.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = Snap;
+		};
+		00C9B7771AB2BC6200C6F924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C9B7701AB2BC6200C6F924 /* Snap.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = SnapTests;
+		};
+		00C9B77B1AB2BDE200C6F924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C9B7701AB2BC6200C6F924 /* Snap.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = Snap;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00C9B77D1AB2BDE200C6F924 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00C9B77A1AB2BDE200C6F924 /* Snap.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00C3281E1AAFE4C40062F6EA /* UIWithoutStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIWithoutStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +71,7 @@
 		00C328381AAFE4C40062F6EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00C328391AAFE4C40062F6EA /* UIWithoutStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWithoutStoryboardTests.swift; sourceTree = "<group>"; };
 		00C328431AAFE7B20062F6EA /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		00C9B7701AB2BC6200C6F924 /* Snap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snap.xcodeproj; path = Snap/Snap.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C9B7791AB2BDE200C6F924 /* Snap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +99,7 @@
 				00C328201AAFE4C40062F6EA /* UIWithoutStoryboard */,
 				00C328361AAFE4C40062F6EA /* UIWithoutStoryboardTests */,
 				00C3281F1AAFE4C40062F6EA /* Products */,
+				00C9B7701AB2BC6200C6F924 /* Snap.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +149,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		00C9B7711AB2BC6200C6F924 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C9B7761AB2BC6200C6F924 /* Snap.framework */,
+				00C9B7781AB2BC6200C6F924 /* SnapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,10 +168,12 @@
 				00C3281A1AAFE4C40062F6EA /* Sources */,
 				00C3281B1AAFE4C40062F6EA /* Frameworks */,
 				00C3281C1AAFE4C40062F6EA /* Resources */,
+				00C9B77D1AB2BDE200C6F924 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				00C9B77C1AB2BDE200C6F924 /* PBXTargetDependency */,
 			);
 			name = UIWithoutStoryboard;
 			productName = UIWithoutStoryboard;
@@ -176,6 +227,12 @@
 			mainGroup = 00C328151AAFE4C40062F6EA;
 			productRefGroup = 00C3281F1AAFE4C40062F6EA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 00C9B7711AB2BC6200C6F924 /* Products */;
+					ProjectRef = 00C9B7701AB2BC6200C6F924 /* Snap.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				00C3281D1AAFE4C40062F6EA /* UIWithoutStoryboard */,
@@ -183,6 +240,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		00C9B7761AB2BC6200C6F924 /* Snap.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Snap.framework;
+			remoteRef = 00C9B7751AB2BC6200C6F924 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C9B7781AB2BC6200C6F924 /* SnapTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SnapTests.xctest;
+			remoteRef = 00C9B7771AB2BC6200C6F924 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00C3281C1AAFE4C40062F6EA /* Resources */ = {
@@ -228,6 +302,11 @@
 			isa = PBXTargetDependency;
 			target = 00C3281D1AAFE4C40062F6EA /* UIWithoutStoryboard */;
 			targetProxy = 00C328341AAFE4C40062F6EA /* PBXContainerItemProxy */;
+		};
+		00C9B77C1AB2BDE200C6F924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Snap;
+			targetProxy = 00C9B77B1AB2BDE200C6F924 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -326,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = UIWithoutStoryboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = UIWithoutStoryboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,6 +476,7 @@
 				00C3283F1AAFE4C40062F6EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00C328401AAFE4C40062F6EA /* Build configuration list for PBXNativeTarget "UIWithoutStoryboardTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +485,7 @@
 				00C328421AAFE4C40062F6EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
